@@ -1,4 +1,7 @@
 import { smallScreen } from "../../components/App/scss/variables.scss";
+import "../../vendor/bootstrap/css/bootstrap.css";
+import "../../css/util.min.css";
+import "../../css/main.min.css";
 
 import classNames from "classnames";
 import * as React from "react";
@@ -74,7 +77,7 @@ class Page extends React.PureComponent<{ product: ProductDetails_product }> {
     const { product } = this.props;
 
     return (
-      <div className="product-page">
+      <div className="bread-crumb bgwhite flex-w p-l-52 p-r-15 p-t-30 p-l-15-sm">
         <div className="container">
           <Breadcrumbs breadcrumbs={this.populateBreadcrumbs(product)} />
         </div>

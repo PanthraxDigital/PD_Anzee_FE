@@ -39,11 +39,15 @@ const Breadcrumbs: React.FC<{
   return (
     <ul className="breadcrumbs">
       <li>
-        <Link to={baseUrl}>Home</Link>
+        <Link to={baseUrl} className="s-text16">
+          Home
+        </Link>
       </li>
       {breadcrumbs.map(breadcrumb => (
         <li key={breadcrumb.value}>
-          <Link to={breadcrumb.link}>{breadcrumb.value}</Link>
+          <Link to={breadcrumb.link} className="s-text16">
+            {breadcrumb.value}
+          </Link>
         </li>
       ))}
     </ul>

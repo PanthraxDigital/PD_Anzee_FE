@@ -8,20 +8,17 @@ import { ProductDetails_product_category_products_edges } from "./types/ProductD
 const OtherProducts: React.FC<{
   products: ProductDetails_product_category_products_edges[];
 }> = ({ products }) => (
-  <div className="product-page__other-products">
+  <div className="relateproduct bgwhite p-t-45 p-b-138">
     <div className="container">
-      <h4 className="product-page__other-products__title">
-        Other products in this category
-      </h4>
-      <div className="product-page__other-products__grid">
-        {products.map(({ node: product }) => (
-          <Link
-            to={generateProductUrl(product.id, product.name)}
-            key={product.id}
-          >
+      <div className="sec-title p-b-60">
+        <h4 className="m-text5 t-center">Related Products</h4>
+      </div>
+      <div>
+        <div className="row">
+          {products.map(({ node: product }) => (
             <ProductListItem product={product} key={product.id} />
-          </Link>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   </div>
