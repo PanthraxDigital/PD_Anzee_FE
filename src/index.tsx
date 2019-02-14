@@ -26,7 +26,7 @@ import {
   invalidTokenLinkWithTokenHandlerComponent
 } from "./core/auth";
 
-const API_URL = urljoin(process.env.BACKEND_URL || "", "/graphql/");
+const API_URL = urljoin("http://localhost:8000" || "", "/graphql/");
 
 const {
   component: UserProviderWithTokenHandler,
