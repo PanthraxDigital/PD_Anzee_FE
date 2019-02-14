@@ -85,7 +85,10 @@ export const ProductList: React.FC<ProductsListProps> = ({
                     <ProductListItem product={product} key={product.id} />
                   ))}
                 </div>
-                <div className="products-list__products__load-more">
+                <div
+                  className="products-list__products__load-more"
+                  style={{ margin: "auto 0", textAlign: "center" }}
+                >
                   {displayLoader ? (
                     <Loader />
                   ) : (

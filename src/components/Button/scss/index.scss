@@ -33,24 +33,18 @@ button {
 
   &.secondary {
     background-color: $white;
-    box-shadow: inset 0px 0px 0px 3px $blue;
-    border-left: 1px solid $blue;
-    border-right: 1px solid $blue;
+    margin: auto;
 
     * {
       color: $blue;
     }
 
     &:hover {
-      background-color: $blue;
+      color: #e65540;
 
       * {
-        color: $white;
+        color: #e65540;
       }
-    }
-
-    &:active {
-      background-color: $blue-dark;
     }
   }
 

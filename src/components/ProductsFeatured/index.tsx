@@ -22,19 +22,21 @@ const ProductsFeatured: React.FC<ProductsFeaturedProps> = ({ title }) => {
 
         if (products.length) {
           return (
-            <div className="products-featured">
+            <div className="products-featured" style={{ textAlign: "center" }}>
               <div className="container">
                 <h3>{title}</h3>
-                <Carousel>
+                {/* <Carousel> */}
+                <div className="row">
                   {products.map(({ node: product }) => (
-                    <Link
-                      to={generateProductUrl(product.id, product.name)}
-                      key={product.id}
-                    >
-                      <ProductListItem product={product} />
-                    </Link>
+                    // <Link
+                    //   to={generateProductUrl(product.id, product.name)}
+                    //   key={product.id}
+                    // >
+                    <ProductListItem product={product} />
+                    // </Link>
                   ))}
-                </Carousel>
+                </div>
+                {/* </Carousel> */}
               </div>
             </div>
           );

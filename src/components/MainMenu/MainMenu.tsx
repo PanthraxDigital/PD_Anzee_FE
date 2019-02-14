@@ -81,7 +81,8 @@ const MainMenu: React.FC = () => (
 
         <div className="main-menu__center">
           <Link to={baseUrl}>
-            <ReactSVG path={logoImg} />
+            {/* <ReactSVG path={logoImg} /> */}
+            Anzee.in
           </Link>
         </div>
 
